@@ -3,6 +3,7 @@ package org.example.springboot.domain.posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.example.springboot.domain.BaseTimeEntity;
 
 import javax.persistence.*;
 
@@ -15,7 +16,8 @@ import javax.persistence.*;
 @Entity
 // ★ Entity 클래스에서는 절대 Setter 메소드 생성 x -> 차후 기능 변경 시 복잡해짐 방지
 // => builder 를 통해 값을 채움
-public class Posts {
+// BaseTimeEntity 를 상속 받음으로써 등록, 수정 시간을 자동으록 관리
+public class Posts extends BaseTimeEntity {
     // PK
     @Id
     @GeneratedValue(strategy =  GenerationType.IDENTITY)
