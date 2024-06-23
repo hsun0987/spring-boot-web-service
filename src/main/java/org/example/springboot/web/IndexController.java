@@ -6,8 +6,7 @@ import org.example.springboot.service.posts.PostsService;
 import org.example.springboot.web.dto.PostsResponseDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 
@@ -28,7 +27,7 @@ public class IndexController {
         if (user != null){
             model.addAttribute("userName", user.getName());
         }
-        
+
         // 머스테치 스타터로 인해서 앞경로와 뒤 파일 확장자가 자동 지정
         // src/main/resources/templates/ + "index" + .mustache 전달 -> view resolver 처리
         return "index";

@@ -1,7 +1,6 @@
 package org.example.springboot.domain.posts;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.jpa.repository.*;
 
 import java.util.List;
 

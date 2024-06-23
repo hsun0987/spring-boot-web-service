@@ -1,8 +1,7 @@
 package org.example.springboot.config.auth.dto;
 
 import lombok.*;
-import org.example.springboot.domain.user.Role;
-import org.example.springboot.domain.user.User;
+import org.example.springboot.domain.user.*;
 
 import java.util.Map;
 
