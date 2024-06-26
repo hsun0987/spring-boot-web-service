@@ -2,10 +2,9 @@ package org.example.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 // JPA Auditing 모두 활성화하도록
-@EnableJpaAuditing
+//@EnableJpaAuditing -> JpaConfig 로 대체
 // ★ 이 어노테이션의 위치부터 설정 읽기 시작 -> 프로젝트의 최상단 위치 !!
 // 스프링 부트의 자동설정, 스프링 Bean 읽기,생성 모두 자동 설정
 @SpringBootApplication
