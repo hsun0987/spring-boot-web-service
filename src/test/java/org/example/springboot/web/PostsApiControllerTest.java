@@ -1,13 +1,9 @@
 package org.example.springboot.web;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.example.springboot.domain.posts.Posts;
-import org.example.springboot.domain.posts.PostsRepository;
-import org.example.springboot.web.dto.PostsSaveRequestDto;
-import org.example.springboot.web.dto.PostsUpdateRequestDto;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.example.springboot.domain.posts.*;
+import org.example.springboot.web.dto.*;
+import org.junit.*;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -25,8 +21,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
