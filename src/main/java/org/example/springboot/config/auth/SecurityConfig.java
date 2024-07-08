@@ -5,7 +5,6 @@ import org.example.springboot.domain.user.Role;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.*;
 
-
 @RequiredArgsConstructor
 // Spring Security 설정 활성화
 @EnableWebSecurity
