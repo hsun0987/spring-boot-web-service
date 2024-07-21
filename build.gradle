@@ -52,5 +52,5 @@ jar {
 }
 
 tasks.named('bootJar') {
-    archiveFileName.set('spring-boot-web-service.jar')
+    archiveFileName.set('spring-boot-web-service-1.0-SNAPSHOT-plain.jar')
 }
