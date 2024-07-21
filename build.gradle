@@ -43,14 +43,6 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-jar {
-    manifest {
-        attributes(
-                'Main-Class': 'org.example.springboot.Application'
-        )
-    }
-}
-
 tasks.named('bootJar') {
     archiveFileName.set('spring-boot-web-service-1.0-SNAPSHOT-plain.jar')
 }
