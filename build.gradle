@@ -50,3 +50,7 @@ jar {
         )
     }
 }
+
+tasks.named('bootJar') {
+    archiveFileName.set('spring-boot-web-service.jar')
+}
