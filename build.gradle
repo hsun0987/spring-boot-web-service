@@ -44,7 +44,7 @@ tasks.withType(JavaCompile) {
 }
 
 tasks.named('bootJar') {
-    archiveFileName.set('spring-boot-web-service-1.0-SNAPSHOT-plain.jar')
+    archiveFileName.set('spring-boot-web-service-1.0-SNAPSHOT.jar')
 }
 
 jar {
